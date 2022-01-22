@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import BabyNames from './BabyNames';
+import allBabyNames from "./babyNameData";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Baby Names</h1>
+        <p>  Traverse through the world of baby names, with this little tool.</p>
       </header>
+      <BabyNames data={allBabyNames}/>
+
     </div>
   );
 }

@@ -1,4 +1,4 @@
-[
+let allBabyNames = [
   {
     "id": 0,
     "name": "Zahra",
